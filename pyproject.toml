@@ -1,0 +1,12 @@
+[build-system]
+requires = ["build", "setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysquirrel"
+version = "0.1.0"
+license = { file = "LICENSE" }
+readme = "README.rst"
+
+[project.urls]
+homepage = "https://github.com/iiasa/pySquirrel"
