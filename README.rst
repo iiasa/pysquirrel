@@ -23,12 +23,25 @@ of:
 - regions eligible for support from cohesion policy have been defined at NUTS 2 level
 - the cohesion report has so far mainly been prepared at NUTS 2 level”
 
+Usage
+-----
+
+pySquirrel allows searching the list of all territorial units by specifying the
+parameters and the values to search as shown below:
 
 .. code:: python
 
     >>> import pysquirrel
-    >>> pysquirrel.nuts.get()
 
+    >>> pysquirrel.nuts.get(country_code="AT")  # gets all regions in Austria
+
+    >>> pysquirrel.nuts.get(code="PT191")  # gets the PT191 region
+
+    >>> pysquirrel.nuts.get(label="Drenthe")  # gets the Drenthe region
+
+    >>> pysquirrel.nuts.get(level=3)  # gets all NUTS3 regions
+
+    >>> pysquirrel.nuts.get(parent_code="DE2")  # gets all regions whose parent region is DE2
 
 Eurostat copyright notice
 -------------------------
