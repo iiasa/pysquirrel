@@ -1,7 +1,7 @@
-pySquirrel
+pysquirrel
 ==========
 
-pySquirrel is a Python package designed to fetch NUTS administrative
+pysquirrel is a Python package designed to fetch NUTS administrative
 divisions.
 
 The current NUTS version is valid from 1 January 2024.
@@ -26,7 +26,7 @@ of:
 Usage
 -----
 
-pySquirrel allows searching the list of all territorial units by specifying the
+pysquirrel allows searching the list of all territorial units by specifying the
 parameters and the values to search as shown below:
 
 .. code:: python
