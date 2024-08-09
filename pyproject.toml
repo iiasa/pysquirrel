@@ -9,4 +9,4 @@ license = { file = "LICENSE" }
 readme = "README.rst"
 
 [project.urls]
-homepage = "https://github.com/iiasa/pySquirrel"
+homepage = "https://github.com/iiasa/pysquirrel"
