@@ -23,7 +23,7 @@ classification](https://ec.europa.eu/eurostat/statistics-explained/index.php?tit
 pysquirrel allows searching the list of all territorial units by specifying the 
 parameters and the values to search as shown below:
 
-```{python}
+```python
 >>> import pysquirrel
 
 >>> pysquirrel.nuts.get(country_code="AT")  # gets all regions in Austria
