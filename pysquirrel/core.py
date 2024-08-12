@@ -8,6 +8,7 @@ from typing import Optional
 from urllib.request import urlretrieve
 
 import openpyxl
+import pooch
 from pydantic.dataclasses import dataclass
 
 # Base path for package code
@@ -114,9 +115,10 @@ class AllRegions:
         """
         Reads data from NUTS spreadsheet into Database and builds search index.
         """
-        urlretrieve(FILE_URL, FILENAME)
+        nuts2024_hash = "3df559906175180d58a2a283985fb632b799b4cbe034e92515295064a9f2c01e"
+        pooch.retrieve(FILE_URL, known_hash=nuts2024_hash, fname=FILENAME, path=BASE_PATH)
         spreadsheet = openpyxl.load_workbook(
-            FILENAME, read_only=True, data_only=True
+            BASE_PATH / FILENAME, read_only=True, data_only=True
         )
         sheet_class = {"NUTS2024": NUTSRegion, "Statistical Regions": SRRegion}
 
