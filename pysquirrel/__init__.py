@@ -1,4 +1,4 @@
-"""pySquirrel"""
+"""pysquirrel"""
 
 from . import core
 
