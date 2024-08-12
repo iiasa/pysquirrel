@@ -5,7 +5,6 @@ from dataclasses import fields
 from pathlib import Path
 from pydantic import field_validator, model_validator, ValidationInfo
 from typing import Optional
-from urllib.request import urlretrieve
 
 import openpyxl
 import pooch
