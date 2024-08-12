@@ -1,19 +1,20 @@
 """
 
 """
-import unicodedata
-
 from dataclasses import fields
 from pathlib import Path
 from pydantic import field_validator, model_validator, ValidationInfo
 from typing import Optional
 
 import openpyxl
+import pooch
 from pydantic.dataclasses import dataclass
 
 # Base path for package code
 BASE_PATH = Path(__file__).absolute().parent
-DATA_PATH = BASE_PATH / "data"
+BASE_URL = "https://ec.europa.eu/eurostat/documents/345175/629341/"
+FILENAME = "NUTS2021-NUTS2024.xlsx"
+FILE_URL = BASE_URL + FILENAME
 MIN_DATA_ROW = 2
 MAX_DATA_COL = 4
 
@@ -27,12 +28,15 @@ def flatten(l):
 
 @dataclass(frozen=True)
 class Region:
-    """Territorial unit base class."""
+    """Territorial region base class."""
     country_code: str
     code: str
     label: str
     level: int
-    parent_code: Optional[str]
+
+    @property
+    def parent_code(self) -> str | None:
+        return self.code[:-1] if self.level > 1 else None
 
     @field_validator("country_code")
     @classmethod
@@ -49,9 +53,9 @@ class Region:
     @classmethod
     def check_code(cls, v: str):
         """
-        Checks if unit code follows standard format of a two capital letters 
+        Checks if region code follows standard format of a two capital letters 
         country code followed by an alphanumeric code, between one to three elements.
-        Placeholder units are marked with 'Z' in place of digits.
+        Placeholder region are marked with 'Z' in place of digits.
         """
         if v[:2].isalpha() and v[:2].isupper() and v[2:].isalnum():
             return v
@@ -97,11 +101,10 @@ class SRRegion(Region):
     pass
 
 class AllRegions:
-    """Database that contains list of all territorial units."""
+    """Database that contains list of all territorial region."""
 
-    filename = DATA_PATH / "NUTS2021-NUTS2024.xlsx"
     search_index: dict = {}
-    data: list[dict] = []
+    data: list[NUTSRegion | SRRegion] = []
 
     def __init__(self) -> None:
         self._load()
@@ -111,37 +114,35 @@ class AllRegions:
         """
         Reads data from NUTS spreadsheet into Database and builds search index.
         """
+        nuts2024_hash = "3df559906175180d58a2a283985fb632b799b4cbe034e92515295064a9f2c01e"
+        pooch.retrieve(FILE_URL, known_hash=nuts2024_hash, fname=FILENAME, path=BASE_PATH)
         spreadsheet = openpyxl.load_workbook(
-            self.filename, read_only=True, data_only=True
+            BASE_PATH / FILENAME, read_only=True, data_only=True
         )
         sheet_class = {"NUTS2024": NUTSRegion, "Statistical Regions": SRRegion}
 
         for sheet_name, cls in sheet_class.items():
             sheet = spreadsheet[sheet_name]
             for row in sheet.iter_rows(min_row=MIN_DATA_ROW, max_col=MAX_DATA_COL):
-                if all([cell.value for cell in row]):   
-                    unit = {field.name: cell.value for (field, cell) in zip(fields(cls), row)}
-                    if unit["level"] > 1:
-                        unit.update({"parent_code": unit["code"][:-1]})
-                    else:
-                        unit.update({"parent_code": None})
-                    self.data.append(cls(**unit))
+                if all(cell.value for cell in row):   
+                    region = {field.name: cell.value for (field, cell) in zip(fields(cls), row)}
+                    self.data.append(cls(**region))
 
     def _set_index(self) -> None:
         """
-        
+        Builds search index to be used to retrieve regions.
         """
-        for unit in self.data:
-            for field in fields(unit):
+        for region in self.data:
+            for field in fields(region):
                 key = self.search_index.setdefault(field.name, {})
-                value = getattr(unit, field.name)
+                value = getattr(region, field.name)
                 if field.name == "code":
-                    key[value] = unit
+                    key[value] = region
                 else:
                     if value in key:
-                        key[value].append(unit)
+                        key[value].append(region)
                     else:
-                        key[value] = [unit]
+                        key[value] = [region]
 
     def _search(
             self, param: str, value: str | int,
@@ -159,10 +160,10 @@ class AllRegions:
             if key == value]))
         
         return results
-
+    
     def get(
             self, **params
-        ) -> list[NUTSRegion | SRRegion, None, None]:
+        ) -> list[NUTSRegion | SRRegion, None]:
         """
         Searches NUTS 2024 classification database. Supports multiple fields/values
         search.
@@ -172,7 +173,7 @@ class AllRegions:
         """
         results = []
         if not params:
-            raise TypeError("no keyword argument(s) passed.")
+            raise ValueError("no keyword argument(s) passed.")
         else:
             for param, value in params.items():
                 if isinstance(value, (int, str)):

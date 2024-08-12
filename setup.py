@@ -8,6 +8,4 @@ setup(
     author="IIASA",
     url="https://github.com/iiasa/pysquirrel",
     license="MIT License",
-    include_package_data=True,
-    package_data={"": ["data/*"]},
     )

@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "pysquirrel"
 version = "0.1.0"
 license = { file = "LICENSE" }
-readme = "README.rst"
+readme = "README.md"
 
 [project.urls]
 homepage = "https://github.com/iiasa/pysquirrel"
