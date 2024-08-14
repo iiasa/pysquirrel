@@ -1,10 +1,7 @@
-"""
-
-"""
 from dataclasses import fields
+from enum import IntEnum
 from pathlib import Path
 from pydantic import field_validator, model_validator, ValidationInfo
-from typing import Optional
 
 import openpyxl
 import pooch
@@ -26,13 +23,18 @@ def flatten(l):
         else:
             yield i
 
+class Level(IntEnum):
+    LEVEL_1 = 1
+    LEVEL_2 = 2
+    LEVEL_3 = 3
+
 @dataclass(frozen=True)
 class Region:
     """Territorial region base class."""
     country_code: str
     code: str
     label: str
-    level: int
+    level: Level
 
     @property
     def parent_code(self) -> str | None:
@@ -58,17 +60,6 @@ class Region:
         Placeholder region are marked with 'Z' in place of digits.
         """
         if v[:2].isalpha() and v[:2].isupper() and v[2:].isalnum():
-            return v
-        else:
-            raise ValueError()
-
-    @field_validator("level")
-    @classmethod
-    def check_level(cls, v: int):
-        """
-        Checks if level corresponds to 1, 2 or 3.
-        """
-        if v in [1, 2, 3]:
             return v
         else:
             raise ValueError()
