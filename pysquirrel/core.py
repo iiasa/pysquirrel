@@ -15,6 +15,7 @@ FILE_URL = BASE_URL + FILENAME
 MIN_DATA_ROW = 2
 MAX_DATA_COL = 4
 
+
 # utility function
 def flatten(l):
     for i in l:
@@ -23,14 +24,17 @@ def flatten(l):
         else:
             yield i
 
+
 class Level(IntEnum):
     LEVEL_1 = 1
     LEVEL_2 = 2
     LEVEL_3 = 3
 
+
 @dataclass(frozen=True)
 class Region:
     """Territorial region base class."""
+
     country_code: str
     code: str
     label: str
@@ -55,7 +59,7 @@ class Region:
     @classmethod
     def check_code(cls, v: str):
         """
-        Checks if region code follows standard format of a two capital letters 
+        Checks if region code follows standard format of a two capital letters
         country code followed by an alphanumeric code, between one to three elements.
         Placeholder region are marked with 'Z' in place of digits.
         """
@@ -63,7 +67,7 @@ class Region:
             return v
         else:
             raise ValueError()
-        
+
     @field_validator("parent_code")
     @classmethod
     def check_parent_code(cls, v: str, info: ValidationInfo):
@@ -75,21 +79,28 @@ class Region:
             return v
         else:
             raise ValueError()
-        
+
     @model_validator(mode="after")
     def check_code_consistency(self):
         """Checks if code, country code, and level are all in conformity."""
-        if self.code.startswith(self.country_code) and \
-            len(self.code) == len(self.country_code) + self.level:
+        if (
+            self.code.startswith(self.country_code)
+            and len(self.code) == len(self.country_code) + self.level
+        ):
             return self
+
 
 class NUTSRegion(Region):
     """NUTS-specific implementation of the Region base class."""
+
     pass
+
 
 class SRRegion(Region):
     """SR-specific implementation of the Region base class."""
+
     pass
+
 
 class AllRegions:
     """Database that contains list of all territorial region."""
@@ -105,8 +116,12 @@ class AllRegions:
         """
         Reads data from NUTS spreadsheet into Database and builds search index.
         """
-        nuts2024_hash = "3df559906175180d58a2a283985fb632b799b4cbe034e92515295064a9f2c01e"
-        pooch.retrieve(FILE_URL, known_hash=nuts2024_hash, fname=FILENAME, path=BASE_PATH)
+        nuts2024_hash = (
+            "3df559906175180d58a2a283985fb632b799b4cbe034e92515295064a9f2c01e"
+        )
+        pooch.retrieve(
+            FILE_URL, known_hash=nuts2024_hash, fname=FILENAME, path=BASE_PATH
+        )
         spreadsheet = openpyxl.load_workbook(
             BASE_PATH / FILENAME, read_only=True, data_only=True
         )
@@ -115,8 +130,11 @@ class AllRegions:
         for sheet_name, cls in sheet_class.items():
             sheet = spreadsheet[sheet_name]
             for row in sheet.iter_rows(min_row=MIN_DATA_ROW, max_col=MAX_DATA_COL):
-                if all(cell.value for cell in row):   
-                    region = {field.name: cell.value for (field, cell) in zip(fields(cls), row)}
+                if all(cell.value for cell in row):
+                    region = {
+                        field.name: cell.value
+                        for (field, cell) in zip(fields(cls), row)
+                    }
                     self.data.append(cls(**region))
 
     def _set_index(self) -> None:
@@ -136,25 +154,31 @@ class AllRegions:
                         key[value] = [region]
 
     def _search(
-            self, param: str, value: str | int,
-        ) -> list[NUTSRegion | SRRegion]:
+        self,
+        param: str,
+        value: str | int,
+    ) -> list[NUTSRegion | SRRegion]:
         """
         Searches database index for one value of a parameter
         and returns a set of all matching result(s).
 
         :param param: field to be searched
-        :param value: value(s) to be searched in the field 
-        
+        :param value: value(s) to be searched in the field
+
         """
-        results = set(flatten([self.search_index[param][key] 
-            for key in self.search_index[param] 
-            if key == value]))
-        
+        results = set(
+            flatten(
+                [
+                    self.search_index[param][key]
+                    for key in self.search_index[param]
+                    if key == value
+                ]
+            )
+        )
+
         return results
-    
-    def get(
-            self, **params
-        ) -> list[NUTSRegion | SRRegion, None]:
+
+    def get(self, **params) -> list[NUTSRegion | SRRegion, None]:
         """
         Searches NUTS 2024 classification database. Supports multiple fields/values
         search.

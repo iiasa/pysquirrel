@@ -8,4 +8,4 @@ setup(
     author="IIASA",
     url="https://github.com/iiasa/pysquirrel",
     license="MIT License",
-    )
+)
