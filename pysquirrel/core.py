@@ -17,8 +17,8 @@ MAX_DATA_COL = 4
 
 
 # utility function
-def flatten(l):
-    for i in l:
+def flatten(lst):
+    for i in lst:
         if isinstance(i, list):
             yield from flatten(i)
         else:
@@ -157,7 +157,7 @@ class AllRegions:
         self,
         param: str,
         value: str | int,
-    ) -> list[NUTSRegion | SRRegion]:
+    ) -> set[NUTSRegion | SRRegion]:
         """
         Searches database index for one value of a parameter
         and returns a set of all matching result(s).
