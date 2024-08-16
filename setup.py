@@ -1,5 +1,4 @@
 from setuptools import setup
-from pathlib import Path
 
 setup(
     name="pysquirrel",
@@ -8,4 +7,4 @@ setup(
     author="IIASA",
     url="https://github.com/iiasa/pysquirrel",
     license="MIT License",
-    )
+)
