@@ -172,16 +172,10 @@ class AllRegions:
         :param level: NUTS level(s) to search
         """
         results = []
-        if country_code or level:
-            for param, values in {"country_code": country_code, "level": level}.items():
-                if isinstance(values, (int, str)):
-                    result = self._search(param, values)
-                    results.append(result)
-                elif isinstance(values, list):
-                    result = []
-                    for value in values:
-                        result.append(self._search(param, value))
-                    results.append(set.union(*result))
-            return list(set.intersection(*results))
-        else:
+        if not (country_code or level):
             raise ValueError("no keyword argument(s) passed.")
+        for param, values in {"country_code": country_code, "level": level}.items():
+            if isinstance(values, (int, str)):
+                values = [values]
+            results.append(set.union(*[self._search(param, value) for value in values]))
+        return list(set.intersection(*results))
