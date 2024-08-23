@@ -109,7 +109,6 @@ class AllRegions:
 
     def __init__(self) -> None:
         self._load()
-        self._set_index()
 
     def _load(self) -> None:
         """
@@ -148,20 +147,11 @@ class AllRegions:
         :param param: field to be searched
         :param value: value(s) to be searched in the field
         """
-        results = set(
-            flatten(
-                [
-                    self.search_index[param][key]
-                    for key in self.search_index[param]
-                    if key == value
-                ]
-            )
-        )
-
+        results = set(flatten([i for i in self.data if getattr(i, param) == value]))
         return results
 
     def get(
-        self, *, country_code: str | list[str] = None, level: int | list[int]
+        self, *, country_code: str | list[str] = None, level: int | list[int] = None
     ) -> list[NUTSRegion | SRRegion, None]:
         """
         Searches NUTS 2024 classification database by country code(s) and/or
@@ -177,5 +167,8 @@ class AllRegions:
         for param, values in {"country_code": country_code, "level": level}.items():
             if isinstance(values, (int, str)):
                 values = [values]
-            results.append(set.union(*[self._search(param, value) for value in values]))
+            if values:
+                results.append(
+                    set.union(*[self._search(param, value) for value in values])
+                )
         return list(set.intersection(*results))

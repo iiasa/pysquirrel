@@ -1,6 +1,6 @@
 """pysquirrel"""
 
-from . import core
+from .core import AllRegions
 
 # create database
-nuts = core.AllRegions()
+nuts = AllRegions()
