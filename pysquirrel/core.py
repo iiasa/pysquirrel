@@ -147,8 +147,7 @@ class AllRegions:
         :param param: field to be searched
         :param value: value(s) to be searched in the field
         """
-        results = set(flatten([i for i in self.data if getattr(i, param) == value]))
-        return results
+        return set(i for i in self.data if getattr(i, param) == value)
 
     def get(
         self, *, country_code: str | list[str] = None, level: int | list[int] = None
@@ -169,6 +168,6 @@ class AllRegions:
                 values = [values]
             if values:
                 results.append(
-                    set.union(*[self._search(param, value) for value in values])
+                    set.union(*(self._search(param, value) for value in values))
                 )
         return list(set.intersection(*results))
