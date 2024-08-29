@@ -1,12 +1,23 @@
-[build-system]
-requires = ["build", "setuptools"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "pysquirrel"
 version = "0.1.0"
-license = { file = "LICENSE" }
+description = "Python package designed to fetch NUTS administrative divisions"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
 readme = "README.md"
 
-[project.urls]
-homepage = "https://github.com/iiasa/pysquirrel"
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.8.2"
+pooch = "^1.8.2"
+openpyxl = "^3.1.5"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
