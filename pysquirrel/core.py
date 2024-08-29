@@ -105,12 +105,10 @@ class SRRegion(Region):
 class AllRegions:
     """Database that contains list of all territorial region."""
 
-    search_index: dict = {}
     data: list[NUTSRegion | SRRegion] = []
 
     def __init__(self) -> None:
         self._load()
-        self._set_index()
 
     def _load(self) -> None:
         """
@@ -137,63 +135,39 @@ class AllRegions:
                     }
                     self.data.append(cls(**region))
 
-    def _set_index(self) -> None:
-        """
-        Builds search index to be used to retrieve regions.
-        """
-        for region in self.data:
-            for field in fields(region):
-                key = self.search_index.setdefault(field.name, {})
-                value = getattr(region, field.name)
-                if field.name == "code":
-                    key[value] = region
-                else:
-                    if value in key:
-                        key[value].append(region)
-                    else:
-                        key[value] = [region]
-
     def _search(
         self,
         param: str,
         value: str | int,
     ) -> set[NUTSRegion | SRRegion]:
         """
-        Searches database index for one value of a parameter
+        Searches database for one value of a region field
         and returns a set of all matching result(s).
 
         :param param: field to be searched
         :param value: value(s) to be searched in the field
-
         """
-        results = set(
-            flatten(
-                [
-                    self.search_index[param][key]
-                    for key in self.search_index[param]
-                    if key == value
-                ]
-            )
-        )
+        return set(i for i in self.data if getattr(i, param) == value)
 
-        return results
-
-    def get(self, **params) -> list[NUTSRegion | SRRegion, None]:
+    def get(
+        self, *, country_code: str | list[str] = None, level: int | list[int] = None
+    ) -> list[NUTSRegion | SRRegion, None]:
         """
-        Searches NUTS 2024 classification database. Supports multiple fields/values
-        search.
+        Searches NUTS 2024 classification database by country code(s) and/or
+        NUTS level.
+        Returns all regions for the listed countries and levels.
 
-        :param **params: key-value pair, with key being a `Region` field to search,
-        and the value to search
+        :param country_code: country code(s) to search
+        :param level: NUTS level(s) to search
         """
         results = []
-        if not params:
+        if not (country_code or level):
             raise ValueError("no keyword argument(s) passed.")
-        else:
-            for param, value in params.items():
-                if isinstance(value, (int, str)):
-                    if param in [field.name for field in fields(Region)]:
-                        results.append(self._search(param, value))
-                else:
-                    raise TypeError("only one value per keyword argument allowed.")
-            return list(set.intersection(*results))
+        for param, values in {"country_code": country_code, "level": level}.items():
+            if isinstance(values, (int, str)):
+                values = [values]
+            if values:
+                results.append(
+                    set.union(*(self._search(param, value) for value in values))
+                )
+        return list(set.intersection(*results))
