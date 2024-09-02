@@ -1,0 +1,47 @@
+# Workflow created according to: https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
+name: Publish to PyPI and TestPyPI
+
+on:
+  push:
+    tags: ["v*"]
+  release:
+    types: ["published"]
+
+jobs:
+  build-n-publish:
+    name: Build and publish Python distributions to PyPI and TestPyPI
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      #----------------------------------------------
+      #       check-out repo and set-up python
+      #----------------------------------------------
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      #----------------------------------------------
+      #  -----  install & configure poetry  -----
+      #----------------------------------------------
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+      - name: Install poetry dynamic versioning plugin
+        run: poetry self add "poetry-dynamic-versioning[plugin]"
+      - name: Build package
+        run: poetry build
+      - if: github.event_name == 'release'
+        name: Publish distribution to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+      - if: github.event_name != 'release'
+        name: Publish distribution to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
