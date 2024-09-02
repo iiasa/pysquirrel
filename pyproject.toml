@@ -3,7 +3,7 @@ name = "pysquirrel"
 version = "0.0.0"
 description = "Python package designed to fetch NUTS administrative divisions"
 authors = ["Scenario Services team, ECE program, IIASA"]
-maintainers = [David Almeida <almeida@iiasa.ac.at>]
+maintainers = ["David Almeida <almeida@iiasa.ac.at>"]
 license = "MIT"
 readme = "README.md"
 
