@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "pysquirrel"
-version = "0.1.0"
+version = "0.0.0"
 description = "Python package designed to fetch NUTS administrative divisions"
-authors = ["Your Name <you@example.com>"]
+authors = ["Scenario Services team, ECE program, IIASA"]
+maintainers = [David Almeida <almeida@iiasa.ac.at>]
 license = "MIT"
 readme = "README.md"
 
@@ -18,6 +19,12 @@ pytest = "^8.3.2"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.6.2"
 
+[tool.poetry-dynamic-versioning]
+bump = true
+enable = true
+style = "pep440"
+vcs = "git"
+
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+build-backend = "poetry_dynamic_versioning.backend"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
