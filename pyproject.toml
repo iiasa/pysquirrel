@@ -1,12 +1,30 @@
-[build-system]
-requires = ["build", "setuptools"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "pysquirrel"
-version = "0.1.0"
-license = { file = "LICENSE" }
+version = "0.0.0"
+description = "Python package designed to fetch NUTS administrative divisions"
+authors = ["Scenario Services team, ECE program, IIASA"]
+maintainers = ["David Almeida <almeida@iiasa.ac.at>"]
+license = "MIT"
 readme = "README.md"
 
-[project.urls]
-homepage = "https://github.com/iiasa/pysquirrel"
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.8.2"
+pooch = "^1.8.2"
+openpyxl = "^3.1.5"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.2"
+
+[tool.poetry-dynamic-versioning]
+bump = true
+enable = true
+style = "pep440"
+vcs = "git"
+
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
