@@ -1,26 +1,36 @@
-# pysquirrel
+# pysquirrel - NUTS administrative region utility
 
-pysquirrel is a Python package designed to fetch NUTS administrative
-divisions.
+[![license](https://img.shields.io/badge/License-MIT-blue)](https://github.com/iiasa/pysquirrel/blob/main/LICENSE)
+[![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![pytest](https://img.shields.io/github/actions/workflow/status/iiasa/pysquirrel/pytest.yml?logo=GitHub&label=pytest)](https://github.com/iiasa/pysquirrel/actions/workflows/pytest.yml)
+
+Copyright 2024 IIASA Scenario Services team
+
+This repository is licensed under the [MIT License](LICENSE).
+
+## Overview
+
+**pysquirrel** is a Python package designed to work with NUTS administrative divisions.
 
 The current NUTS version is valid from 1 January 2024.
 
-From the [Eurostat
-website](https://ec.europa.eu/eurostat/web/nuts/overview):
+## Background
+
+From the [Eurostat website](https://ec.europa.eu/eurostat/web/nuts/overview)
 
 The [NUTS
 classification](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Nomenclature_of_territorial_units_for_statistics_(NUTS))
-(Nomenclature of territorial units for statistics) "is a geographical nomenclature subdividing the economic territory of the European Union (EU) into regions at three different levels (NUTS 1, 2 and 3 respectively, moving from larger to smaller territorial units). Above NUTS 1, there is the 'national' level of the Member States."
+(Nomenclature of territorial units for statistics) is a geographical nomenclature subdividing the economic territory of the European Union (EU) into regions at three different levels (NUTS 1, 2 and 3 respectively, moving from larger to smaller territorial units). Above NUTS 1, there is the 'national' level of the Member States.
 
-"NUTS is used for:
+NUTS is used for:
 
 - collecting, developing and harmonising European regional statistics
 - carrying out socio-economic analyses of the regions
-- framing of EU regional policies"
+- framing of EU regional policies
 
 ## Usage
 
-pysquirrel allows searching the list of all territorial units by specifying the 
+**pysquirrel** allows searching the list of all territorial units by specifying the 
 parameters and the values to search as shown below:
 
 ```python
@@ -37,7 +47,9 @@ parameters and the values to search as shown below:
 >>> pysquirrel.nuts.get(parent_code="DE2")  # gets all regions whose parent region is DE2
 ```
 
-## Eurostat copyright notice
+## Eurostat copyright notice on NUTS region data file
+
+This package imports the NUTS spreadsheet from the Eurostat website.
 
 Please note that pysquirrel is not developed, maintained or affiliated
 with Eurostat. The [Eurostat copyright notice
@@ -52,3 +64,9 @@ with due citation of the source.
 > Union and partner countries -- NUTS and statistical regions 2021 --
 > 2022 edition, Publications Office of the European Union, 2022,
 > https://data.europa.eu/doi/10.2785/321792
+
+## Acknowledgement
+
+This package is developed and maintained by the *Scenario Services & Scientific Software*
+research theme at the IIASA Energy, Climate, and Enviroment program.
+Visit https://software.ece.iiasa.ac.at for more information.
