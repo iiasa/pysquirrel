@@ -51,8 +51,6 @@ code, a label (the full region name), a NUTS level (1, 2 or 3), and a parent cod
 
 This package imports the NUTS spreadsheet from the Eurostat website.
 
-## Eurostat copyright notice
-
 Please note that pysquirrel is not developed, maintained or affiliated
 with Eurostat. The [Eurostat copyright notice
 applies](https://ec.europa.eu/eurostat/web/main/help/copyright-notice).
