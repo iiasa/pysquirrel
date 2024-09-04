@@ -43,9 +43,12 @@ parameters and the values to search as shown below:
 >>> pysquirrel.nuts.get(country_code="AT", level=3)  # gets all NUTS3 regions in Austria
 ```
 
-Each Region object consists of five attributes: a NUTS code (e.g.: AT127), a country
-code, a label (the full region name), a NUTS level (1, 2 or 3), and a parent code
-(corresponding to the NUTS parent region).
+Each Region object consists of five attributes:
+- a NUTS code (e.g.: AT127)
+- a country code
+- a label (the full region name)
+- a NUTS level (1, 2 or 3)
+- a parent code (corresponding to the NUTS parent region)
 
 ## Eurostat copyright notice on NUTS region data file
 
