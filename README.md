@@ -3,6 +3,7 @@
 [![license](https://img.shields.io/badge/License-MIT-blue)](https://github.com/iiasa/pysquirrel/blob/main/LICENSE)
 [![Code style: ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![pytest](https://img.shields.io/github/actions/workflow/status/iiasa/pysquirrel/pytest.yml?logo=GitHub&label=pytest)](https://github.com/iiasa/pysquirrel/actions/workflows/pytest.yml)
+[![DOI](https://zenodo.org/badge/791752279.svg)](https://zenodo.org/doi/10.5281/zenodo.13683405)
 
 Copyright 2024 IIASA Scenario Services team
 
