@@ -1,0 +1,1840 @@
+- Country code: IS
+  SR Code: IS0
+  SR label: Ísland
+  SR level: 1
+- Country code: IS
+  SR Code: IS00
+  SR label: Ísland
+  SR level: 2
+- Country code: IS
+  SR Code: IS001
+  SR label: Höfuðborgarsvæði
+  SR level: 3
+- Country code: IS
+  SR Code: IS002
+  SR label: Landsbyggð
+  SR level: 3
+- Country code: IS
+  SR Code: ISZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: IS
+  SR Code: ISZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: IS
+  SR Code: ISZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: LI
+  SR Code: LI0
+  SR label: Liechtenstein
+  SR level: 1
+- Country code: LI
+  SR Code: LI00
+  SR label: Liechtenstein
+  SR level: 2
+- Country code: LI
+  SR Code: LI000
+  SR label: Liechtenstein
+  SR level: 3
+- Country code: LI
+  SR Code: LIZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: LI
+  SR Code: LIZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: LI
+  SR Code: LIZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO0
+  SR label: Norge
+  SR level: 1
+- Country code: 'NO'
+  SR Code: NO02
+  SR label: Innlandet
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NO020
+  SR label: Innlandet
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO06
+  SR label: Trøndelag/Trööndelage
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NO060
+  SR label: Trøndelag/Trööndelage
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO07
+  SR label: Nord-Norge
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NO071
+  SR label: Nordland/Nordlánnda
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO072
+  SR label: Troms/Romsa/Tromssa
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO073
+  SR label: Finnmark/Finnmárku/Finmarkku
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO08
+  SR label: Oslo og Viken
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NO081
+  SR label: Oslo
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO083
+  SR label: Østfold
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO084
+  SR label: Akershus
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO085
+  SR label: Buskerud
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO09
+  SR label: Agder og Sør-Østlandet
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NO092
+  SR label: Agder
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO093
+  SR label: Vestfold
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO094
+  SR label: Telemark
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO0A
+  SR label: Vestlandet
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NO0A1
+  SR label: Rogaland
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO0A2
+  SR label: Vestland
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO0A3
+  SR label: Møre og Romsdal
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO0B
+  SR label: Svalbard og Jan Mayen
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NO0B1
+  SR label: Jan Mayen
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NO0B2
+  SR label: Svalbard
+  SR level: 3
+- Country code: 'NO'
+  SR Code: NOZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: 'NO'
+  SR Code: NOZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: 'NO'
+  SR Code: NOZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: CH
+  SR Code: CH0
+  SR label: Schweiz/Suisse/Svizzera
+  SR level: 1
+- Country code: CH
+  SR Code: CH01
+  SR label: Région lémanique
+  SR level: 2
+- Country code: CH
+  SR Code: CH011
+  SR label: Vaud
+  SR level: 3
+- Country code: CH
+  SR Code: CH012
+  SR label: Valais / Wallis
+  SR level: 3
+- Country code: CH
+  SR Code: CH013
+  SR label: Genève
+  SR level: 3
+- Country code: CH
+  SR Code: CH02
+  SR label: Espace Mittelland
+  SR level: 2
+- Country code: CH
+  SR Code: CH021
+  SR label: Bern / Berne
+  SR level: 3
+- Country code: CH
+  SR Code: CH022
+  SR label: Fribourg / Freiburg
+  SR level: 3
+- Country code: CH
+  SR Code: CH023
+  SR label: Solothurn
+  SR level: 3
+- Country code: CH
+  SR Code: CH024
+  SR label: Neuchâtel
+  SR level: 3
+- Country code: CH
+  SR Code: CH025
+  SR label: Jura
+  SR level: 3
+- Country code: CH
+  SR Code: CH03
+  SR label: Nordwestschweiz
+  SR level: 2
+- Country code: CH
+  SR Code: CH031
+  SR label: Basel-Stadt
+  SR level: 3
+- Country code: CH
+  SR Code: CH032
+  SR label: Basel-Landschaft
+  SR level: 3
+- Country code: CH
+  SR Code: CH033
+  SR label: Aargau
+  SR level: 3
+- Country code: CH
+  SR Code: CH04
+  SR label: Zürich
+  SR level: 2
+- Country code: CH
+  SR Code: CH040
+  SR label: Zürich
+  SR level: 3
+- Country code: CH
+  SR Code: CH05
+  SR label: Ostschweiz
+  SR level: 2
+- Country code: CH
+  SR Code: CH051
+  SR label: Glarus
+  SR level: 3
+- Country code: CH
+  SR Code: CH052
+  SR label: Schaffhausen
+  SR level: 3
+- Country code: CH
+  SR Code: CH053
+  SR label: Appenzell Ausserrhoden
+  SR level: 3
+- Country code: CH
+  SR Code: CH054
+  SR label: Appenzell Innerrhoden
+  SR level: 3
+- Country code: CH
+  SR Code: CH055
+  SR label: St. Gallen
+  SR level: 3
+- Country code: CH
+  SR Code: CH056
+  SR label: Graubünden / Grigioni / Grischun
+  SR level: 3
+- Country code: CH
+  SR Code: CH057
+  SR label: Thurgau
+  SR level: 3
+- Country code: CH
+  SR Code: CH06
+  SR label: Zentralschweiz
+  SR level: 2
+- Country code: CH
+  SR Code: CH061
+  SR label: Luzern
+  SR level: 3
+- Country code: CH
+  SR Code: CH062
+  SR label: Uri
+  SR level: 3
+- Country code: CH
+  SR Code: CH063
+  SR label: Schwyz
+  SR level: 3
+- Country code: CH
+  SR Code: CH064
+  SR label: Obwalden
+  SR level: 3
+- Country code: CH
+  SR Code: CH065
+  SR label: Nidwalden
+  SR level: 3
+- Country code: CH
+  SR Code: CH066
+  SR label: Zug
+  SR level: 3
+- Country code: CH
+  SR Code: CH07
+  SR label: Ticino
+  SR level: 2
+- Country code: CH
+  SR Code: CH070
+  SR label: Ticino
+  SR level: 3
+- Country code: CH
+  SR Code: CHZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: CH
+  SR Code: CHZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: CH
+  SR Code: CHZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: ME
+  SR Code: ME0
+  SR label: Црна Гора
+  SR level: 1
+- Country code: ME
+  SR Code: ME00
+  SR label: Црна Гора
+  SR level: 2
+- Country code: ME
+  SR Code: ME000
+  SR label: Црна Гора
+  SR level: 3
+- Country code: ME
+  SR Code: MEZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: ME
+  SR Code: MEZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: ME
+  SR Code: MEZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: MK
+  SR Code: MK0
+  SR label: Северна Македонија
+  SR level: 1
+- Country code: MK
+  SR Code: MK00
+  SR label: Северна Македонија
+  SR level: 2
+- Country code: MK
+  SR Code: MK001
+  SR label: Вардарски
+  SR level: 3
+- Country code: MK
+  SR Code: MK002
+  SR label: Источен
+  SR level: 3
+- Country code: MK
+  SR Code: MK003
+  SR label: Југозападен
+  SR level: 3
+- Country code: MK
+  SR Code: MK004
+  SR label: Југоисточен
+  SR level: 3
+- Country code: MK
+  SR Code: MK005
+  SR label: Пелагониски
+  SR level: 3
+- Country code: MK
+  SR Code: MK006
+  SR label: Полошки
+  SR level: 3
+- Country code: MK
+  SR Code: MK007
+  SR label: Североисточен
+  SR level: 3
+- Country code: MK
+  SR Code: MK008
+  SR label: Скопски
+  SR level: 3
+- Country code: MK
+  SR Code: MKZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: MK
+  SR Code: MKZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: MK
+  SR Code: MKZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: AL
+  SR Code: AL0
+  SR label: Shqipëria
+  SR level: 1
+- Country code: AL
+  SR Code: AL01
+  SR label: Veri
+  SR level: 2
+- Country code: AL
+  SR Code: AL011
+  SR label: Dibër
+  SR level: 3
+- Country code: AL
+  SR Code: AL012
+  SR label: Durrës
+  SR level: 3
+- Country code: AL
+  SR Code: AL013
+  SR label: Kukës
+  SR level: 3
+- Country code: AL
+  SR Code: AL014
+  SR label: Lezhë
+  SR level: 3
+- Country code: AL
+  SR Code: AL015
+  SR label: Shkodër
+  SR level: 3
+- Country code: AL
+  SR Code: AL02
+  SR label: Qender
+  SR level: 2
+- Country code: AL
+  SR Code: AL021
+  SR label: Elbasan
+  SR level: 3
+- Country code: AL
+  SR Code: AL022
+  SR label: Tiranë
+  SR level: 3
+- Country code: AL
+  SR Code: AL03
+  SR label: Jug
+  SR level: 2
+- Country code: AL
+  SR Code: AL031
+  SR label: Berat
+  SR level: 3
+- Country code: AL
+  SR Code: AL032
+  SR label: Fier
+  SR level: 3
+- Country code: AL
+  SR Code: AL033
+  SR label: Gjirokastër
+  SR level: 3
+- Country code: AL
+  SR Code: AL034
+  SR label: Korçë
+  SR level: 3
+- Country code: AL
+  SR Code: AL035
+  SR label: Vlorë
+  SR level: 3
+- Country code: AL
+  SR Code: ALZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: AL
+  SR Code: ALZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: AL
+  SR Code: ALZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: RS
+  SR Code: RS1
+  SR label: Србија - север
+  SR level: 1
+- Country code: RS
+  SR Code: RS11
+  SR label: Београдски регион
+  SR level: 2
+- Country code: RS
+  SR Code: RS110
+  SR label: Београдска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS12
+  SR label: Регион Војводине
+  SR level: 2
+- Country code: RS
+  SR Code: RS121
+  SR label: Западнобачка област
+  SR level: 3
+- Country code: RS
+  SR Code: RS122
+  SR label: Јужнобанатска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS123
+  SR label: Јужнобачка област
+  SR level: 3
+- Country code: RS
+  SR Code: RS124
+  SR label: Севернобанатска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS125
+  SR label: Севернобачка област
+  SR level: 3
+- Country code: RS
+  SR Code: RS126
+  SR label: Средњобанатска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS127
+  SR label: Сремска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS2
+  SR label: Србија - југ
+  SR level: 1
+- Country code: RS
+  SR Code: RS21
+  SR label: Регион Шумадије и Западне Србије
+  SR level: 2
+- Country code: RS
+  SR Code: RS211
+  SR label: Златиборска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS212
+  SR label: Колубарска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS213
+  SR label: Мачванска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS214
+  SR label: Моравичка област
+  SR level: 3
+- Country code: RS
+  SR Code: RS215
+  SR label: Поморавска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS216
+  SR label: Расинска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS217
+  SR label: Рашка област
+  SR level: 3
+- Country code: RS
+  SR Code: RS218
+  SR label: Шумадијска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS22
+  SR label: Регион Јужне и Источне Србије
+  SR level: 2
+- Country code: RS
+  SR Code: RS221
+  SR label: Борска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS222
+  SR label: Браничевска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS223
+  SR label: Зајечарска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS224
+  SR label: Јабланичка област
+  SR level: 3
+- Country code: RS
+  SR Code: RS225
+  SR label: Нишавска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS226
+  SR label: Пиротска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS227
+  SR label: Подунавска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS228
+  SR label: Пчињска област
+  SR level: 3
+- Country code: RS
+  SR Code: RS229
+  SR label: Топличка област
+  SR level: 3
+- Country code: RS
+  SR Code: RSZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: RS
+  SR Code: RSZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: RS
+  SR Code: RSZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: TR
+  SR Code: TR1
+  SR label: İstanbul
+  SR level: 1
+- Country code: TR
+  SR Code: TR10
+  SR label: İstanbul
+  SR level: 2
+- Country code: TR
+  SR Code: TR100
+  SR label: İstanbul
+  SR level: 3
+- Country code: TR
+  SR Code: TR2
+  SR label: Batı Marmara
+  SR level: 1
+- Country code: TR
+  SR Code: TR21
+  SR label: Tekirdağ, Edirne, Kırklareli
+  SR level: 2
+- Country code: TR
+  SR Code: TR211
+  SR label: Tekirdağ
+  SR level: 3
+- Country code: TR
+  SR Code: TR212
+  SR label: Edirne
+  SR level: 3
+- Country code: TR
+  SR Code: TR213
+  SR label: Kırklareli
+  SR level: 3
+- Country code: TR
+  SR Code: TR22
+  SR label: Balıkesir, Çanakkale
+  SR level: 2
+- Country code: TR
+  SR Code: TR221
+  SR label: Balıkesir
+  SR level: 3
+- Country code: TR
+  SR Code: TR222
+  SR label: Çanakkale
+  SR level: 3
+- Country code: TR
+  SR Code: TR3
+  SR label: Ege
+  SR level: 1
+- Country code: TR
+  SR Code: TR31
+  SR label: İzmir
+  SR level: 2
+- Country code: TR
+  SR Code: TR310
+  SR label: İzmir
+  SR level: 3
+- Country code: TR
+  SR Code: TR32
+  SR label: Aydın, Denizli, Muğla
+  SR level: 2
+- Country code: TR
+  SR Code: TR321
+  SR label: Aydın
+  SR level: 3
+- Country code: TR
+  SR Code: TR322
+  SR label: Denizli
+  SR level: 3
+- Country code: TR
+  SR Code: TR323
+  SR label: Muğla
+  SR level: 3
+- Country code: TR
+  SR Code: TR33
+  SR label: Manisa, Afyonkarahisar, Kütahya, Uşak
+  SR level: 2
+- Country code: TR
+  SR Code: TR331
+  SR label: Manisa
+  SR level: 3
+- Country code: TR
+  SR Code: TR332
+  SR label: Afyonkarahisar
+  SR level: 3
+- Country code: TR
+  SR Code: TR333
+  SR label: Kütahya
+  SR level: 3
+- Country code: TR
+  SR Code: TR334
+  SR label: Uşak
+  SR level: 3
+- Country code: TR
+  SR Code: TR4
+  SR label: Doğu Marmara
+  SR level: 1
+- Country code: TR
+  SR Code: TR41
+  SR label: Bursa, Eskişehir, Bilecik
+  SR level: 2
+- Country code: TR
+  SR Code: TR411
+  SR label: Bursa
+  SR level: 3
+- Country code: TR
+  SR Code: TR412
+  SR label: Eskişehir
+  SR level: 3
+- Country code: TR
+  SR Code: TR413
+  SR label: Bilecik
+  SR level: 3
+- Country code: TR
+  SR Code: TR42
+  SR label: Kocaeli, Sakarya, Düzce, Bolu, Yalova
+  SR level: 2
+- Country code: TR
+  SR Code: TR421
+  SR label: Kocaeli
+  SR level: 3
+- Country code: TR
+  SR Code: TR422
+  SR label: Sakarya
+  SR level: 3
+- Country code: TR
+  SR Code: TR423
+  SR label: Düzce
+  SR level: 3
+- Country code: TR
+  SR Code: TR424
+  SR label: Bolu
+  SR level: 3
+- Country code: TR
+  SR Code: TR425
+  SR label: Yalova
+  SR level: 3
+- Country code: TR
+  SR Code: TR5
+  SR label: Batı Anadolu
+  SR level: 1
+- Country code: TR
+  SR Code: TR51
+  SR label: Ankara
+  SR level: 2
+- Country code: TR
+  SR Code: TR510
+  SR label: Ankara
+  SR level: 3
+- Country code: TR
+  SR Code: TR52
+  SR label: Konya, Karaman
+  SR level: 2
+- Country code: TR
+  SR Code: TR521
+  SR label: Konya
+  SR level: 3
+- Country code: TR
+  SR Code: TR522
+  SR label: Karaman
+  SR level: 3
+- Country code: TR
+  SR Code: TR6
+  SR label: Akdeniz
+  SR level: 1
+- Country code: TR
+  SR Code: TR61
+  SR label: Antalya, Isparta, Burdur
+  SR level: 2
+- Country code: TR
+  SR Code: TR611
+  SR label: Antalya
+  SR level: 3
+- Country code: TR
+  SR Code: TR612
+  SR label: Isparta
+  SR level: 3
+- Country code: TR
+  SR Code: TR613
+  SR label: Burdur
+  SR level: 3
+- Country code: TR
+  SR Code: TR62
+  SR label: Adana, Mersin
+  SR level: 2
+- Country code: TR
+  SR Code: TR621
+  SR label: Adana
+  SR level: 3
+- Country code: TR
+  SR Code: TR622
+  SR label: Mersin
+  SR level: 3
+- Country code: TR
+  SR Code: TR63
+  SR label: Hatay, Kahramanmaraş, Osmaniye
+  SR level: 2
+- Country code: TR
+  SR Code: TR631
+  SR label: Hatay
+  SR level: 3
+- Country code: TR
+  SR Code: TR632
+  SR label: Kahramanmaraş
+  SR level: 3
+- Country code: TR
+  SR Code: TR633
+  SR label: Osmaniye
+  SR level: 3
+- Country code: TR
+  SR Code: TR7
+  SR label: Orta Anadolu
+  SR level: 1
+- Country code: TR
+  SR Code: TR71
+  SR label: Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir
+  SR level: 2
+- Country code: TR
+  SR Code: TR711
+  SR label: Kırıkkale
+  SR level: 3
+- Country code: TR
+  SR Code: TR712
+  SR label: Aksaray
+  SR level: 3
+- Country code: TR
+  SR Code: TR713
+  SR label: Niğde
+  SR level: 3
+- Country code: TR
+  SR Code: TR714
+  SR label: Nevşehir
+  SR level: 3
+- Country code: TR
+  SR Code: TR715
+  SR label: Kırşehir
+  SR level: 3
+- Country code: TR
+  SR Code: TR72
+  SR label: Kayseri, Sivas, Yozgat
+  SR level: 2
+- Country code: TR
+  SR Code: TR721
+  SR label: Kayseri
+  SR level: 3
+- Country code: TR
+  SR Code: TR722
+  SR label: Sivas
+  SR level: 3
+- Country code: TR
+  SR Code: TR723
+  SR label: Yozgat
+  SR level: 3
+- Country code: TR
+  SR Code: TR8
+  SR label: Batı Karadeniz
+  SR level: 1
+- Country code: TR
+  SR Code: TR81
+  SR label: Zonguldak, Karabük, Bartın
+  SR level: 2
+- Country code: TR
+  SR Code: TR811
+  SR label: Zonguldak
+  SR level: 3
+- Country code: TR
+  SR Code: TR812
+  SR label: Karabük
+  SR level: 3
+- Country code: TR
+  SR Code: TR813
+  SR label: Bartın
+  SR level: 3
+- Country code: TR
+  SR Code: TR82
+  SR label: Kastamonu, Çankırı, Sinop
+  SR level: 2
+- Country code: TR
+  SR Code: TR821
+  SR label: Kastamonu
+  SR level: 3
+- Country code: TR
+  SR Code: TR822
+  SR label: Çankırı
+  SR level: 3
+- Country code: TR
+  SR Code: TR823
+  SR label: Sinop
+  SR level: 3
+- Country code: TR
+  SR Code: TR83
+  SR label: Samsun, Tokat, Çorum, Amasya
+  SR level: 2
+- Country code: TR
+  SR Code: TR831
+  SR label: Samsun
+  SR level: 3
+- Country code: TR
+  SR Code: TR832
+  SR label: Tokat
+  SR level: 3
+- Country code: TR
+  SR Code: TR833
+  SR label: Çorum
+  SR level: 3
+- Country code: TR
+  SR Code: TR834
+  SR label: Amasya
+  SR level: 3
+- Country code: TR
+  SR Code: TR9
+  SR label: Doğu Karadeniz
+  SR level: 1
+- Country code: TR
+  SR Code: TR90
+  SR label: Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane
+  SR level: 2
+- Country code: TR
+  SR Code: TR901
+  SR label: Trabzon
+  SR level: 3
+- Country code: TR
+  SR Code: TR902
+  SR label: Ordu
+  SR level: 3
+- Country code: TR
+  SR Code: TR903
+  SR label: Giresun
+  SR level: 3
+- Country code: TR
+  SR Code: TR904
+  SR label: Rize
+  SR level: 3
+- Country code: TR
+  SR Code: TR905
+  SR label: Artvin
+  SR level: 3
+- Country code: TR
+  SR Code: TR906
+  SR label: Gümüşhane
+  SR level: 3
+- Country code: TR
+  SR Code: TRA
+  SR label: Kuzeydoğu Anadolu
+  SR level: 1
+- Country code: TR
+  SR Code: TRA1
+  SR label: Erzurum, Erzincan, Bayburt
+  SR level: 2
+- Country code: TR
+  SR Code: TRA11
+  SR label: Erzurum
+  SR level: 3
+- Country code: TR
+  SR Code: TRA12
+  SR label: Erzincan
+  SR level: 3
+- Country code: TR
+  SR Code: TRA13
+  SR label: Bayburt
+  SR level: 3
+- Country code: TR
+  SR Code: TRA2
+  SR label: Ağrı, Kars, Iğdır, Ardahan
+  SR level: 2
+- Country code: TR
+  SR Code: TRA21
+  SR label: Ağrı
+  SR level: 3
+- Country code: TR
+  SR Code: TRA22
+  SR label: Kars
+  SR level: 3
+- Country code: TR
+  SR Code: TRA23
+  SR label: Iğdır
+  SR level: 3
+- Country code: TR
+  SR Code: TRA24
+  SR label: Ardahan
+  SR level: 3
+- Country code: TR
+  SR Code: TRB
+  SR label: Ortadoğu Anadolu
+  SR level: 1
+- Country code: TR
+  SR Code: TRB1
+  SR label: Malatya, Elazığ, Bingöl, Tunceli
+  SR level: 2
+- Country code: TR
+  SR Code: TRB11
+  SR label: Malatya
+  SR level: 3
+- Country code: TR
+  SR Code: TRB12
+  SR label: Elazığ
+  SR level: 3
+- Country code: TR
+  SR Code: TRB13
+  SR label: Bingöl
+  SR level: 3
+- Country code: TR
+  SR Code: TRB14
+  SR label: Tunceli
+  SR level: 3
+- Country code: TR
+  SR Code: TRB2
+  SR label: Van, Muş, Bitlis, Hakkari
+  SR level: 2
+- Country code: TR
+  SR Code: TRB21
+  SR label: Van
+  SR level: 3
+- Country code: TR
+  SR Code: TRB22
+  SR label: Muş
+  SR level: 3
+- Country code: TR
+  SR Code: TRB23
+  SR label: Bitlis
+  SR level: 3
+- Country code: TR
+  SR Code: TRB24
+  SR label: Hakkari
+  SR level: 3
+- Country code: TR
+  SR Code: TRC
+  SR label: Güneydoğu Anadolu
+  SR level: 1
+- Country code: TR
+  SR Code: TRC1
+  SR label: Gaziantep, Adıyaman, Kilis
+  SR level: 2
+- Country code: TR
+  SR Code: TRC11
+  SR label: Gaziantep
+  SR level: 3
+- Country code: TR
+  SR Code: TRC12
+  SR label: Adıyaman
+  SR level: 3
+- Country code: TR
+  SR Code: TRC13
+  SR label: Kilis
+  SR level: 3
+- Country code: TR
+  SR Code: TRC2
+  SR label: Şanlıurfa, Diyarbakır
+  SR level: 2
+- Country code: TR
+  SR Code: TRC21
+  SR label: Şanlıurfa
+  SR level: 3
+- Country code: TR
+  SR Code: TRC22
+  SR label: Diyarbakır
+  SR level: 3
+- Country code: TR
+  SR Code: TRC3
+  SR label: Mardin, Batman, Şırnak, Siirt
+  SR level: 2
+- Country code: TR
+  SR Code: TRC31
+  SR label: Mardin
+  SR level: 3
+- Country code: TR
+  SR Code: TRC32
+  SR label: Batman
+  SR level: 3
+- Country code: TR
+  SR Code: TRC33
+  SR label: Şırnak
+  SR level: 3
+- Country code: TR
+  SR Code: TRC34
+  SR label: Siirt
+  SR level: 3
+- Country code: TR
+  SR Code: TRZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: TR
+  SR Code: TRZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: TR
+  SR Code: TRZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: UA
+  SR Code: UA1
+  SR label: Макрорегіон_01
+  SR level: 1
+- Country code: UA
+  SR Code: UA11
+  SR label: Полтавська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA111
+  SR label: Кременчуцький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA112
+  SR label: Лубенський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA113
+  SR label: Миргородський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA114
+  SR label: Полтавський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA12
+  SR label: Сумська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA121
+  SR label: Конотопський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA122
+  SR label: Охтирський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA123
+  SR label: Роменський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA124
+  SR label: Сумський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA125
+  SR label: Шосткинський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA13
+  SR label: Харківська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA131
+  SR label: Богодухівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA132
+  SR label: Ізюмський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA133
+  SR label: Красноградський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA134
+  SR label: Куп'Янський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA135
+  SR label: Лозівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA136
+  SR label: Харківський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA137
+  SR label: Чугуївський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA14
+  SR label: Чернігівська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA141
+  SR label: Корюківський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA142
+  SR label: Ніжинський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA143
+  SR label: Новгород-Сіверський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA144
+  SR label: Прилуцький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA145
+  SR label: Чернігівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA2
+  SR label: Макрорегіон_02
+  SR level: 1
+- Country code: UA
+  SR Code: UA21
+  SR label: Донецька Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA211
+  SR label: Бахмутський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA212
+  SR label: Волноваський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA213
+  SR label: Горлівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA214
+  SR label: Донецький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA215
+  SR label: Кальміуський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA216
+  SR label: Краматорський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA217
+  SR label: Маріупольський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA218
+  SR label: Покровський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA22
+  SR label: Луганська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA221
+  SR label: Алчевський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA222
+  SR label: Довжанський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA223
+  SR label: Луганський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA224
+  SR label: Ровеньківський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA225
+  SR label: Сватівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA226
+  SR label: Сєвєродонецький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA227
+  SR label: Старобільський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA228
+  SR label: Щастинський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA3
+  SR label: Макрорегіон_03
+  SR level: 1
+- Country code: UA
+  SR Code: UA31
+  SR label: Дніпропетровська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA311
+  SR label: Дніпровський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA312
+  SR label: Кам'Янський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA313
+  SR label: Криворізький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA314
+  SR label: Нікопольський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA315
+  SR label: Новомосковський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA316
+  SR label: Павлоградський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA317
+  SR label: Синельниківський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA32
+  SR label: Запорізька Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA321
+  SR label: Бердянський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA322
+  SR label: Василівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA323
+  SR label: Запорізький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA324
+  SR label: Мелітопольський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA325
+  SR label: Пологівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA33
+  SR label: Кіровоградська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA331
+  SR label: Голованівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA332
+  SR label: Кропивницький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA333
+  SR label: Новоукраїнський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA334
+  SR label: Олександрійський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA4
+  SR label: Макрорегіон_04
+  SR level: 1
+- Country code: UA
+  SR Code: UA41
+  SR label: Миколаївська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA411
+  SR label: Баштанський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA412
+  SR label: Вознесенський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA413
+  SR label: Миколаївський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA414
+  SR label: Первомайський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA42
+  SR label: Одеська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA421
+  SR label: Березівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA422
+  SR label: Білгород-Дністровський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA423
+  SR label: Болградський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA424
+  SR label: Ізмаїльський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA425
+  SR label: Одеський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA426
+  SR label: Подільський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA427
+  SR label: Роздільнянський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA43
+  SR label: Херсонська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA431
+  SR label: Бериславський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA432
+  SR label: Генічеський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA433
+  SR label: Каховський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA434
+  SR label: Скадовський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA435
+  SR label: Херсонський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA44
+  SR label: Ар Крим
+  SR level: 2
+- Country code: UA
+  SR Code: UA441
+  SR label: Бахчисарайський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA442
+  SR label: Білогірський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA443
+  SR label: Джанкойський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA444
+  SR label: Євпаторійський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA445
+  SR label: Керченський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA446
+  SR label: Курманський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA447
+  SR label: Перекопський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA448
+  SR label: Сімферопольський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA449
+  SR label: Феодосійський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA44A
+  SR label: Ялтинський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA45
+  SR label: М. Севастополь
+  SR level: 2
+- Country code: UA
+  SR Code: UA450
+  SR label: М. Севастополь
+  SR level: 3
+- Country code: UA
+  SR Code: UA5
+  SR label: Макрорегіон_05
+  SR level: 1
+- Country code: UA
+  SR Code: UA51
+  SR label: Вінницька Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA511
+  SR label: Вінницький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA512
+  SR label: Гайсинський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA513
+  SR label: Жмеринський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA514
+  SR label: Могилів-Подільський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA515
+  SR label: Тульчинський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA516
+  SR label: Хмільницький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA52
+  SR label: Тернопільська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA521
+  SR label: Кременецький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA522
+  SR label: Тернопільський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA523
+  SR label: Чортківський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA53
+  SR label: Хмельницька Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA531
+  SR label: Кам'Янець-Подільський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA532
+  SR label: Хмельницький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA533
+  SR label: Шепетівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA6
+  SR label: Макрорегіон_06
+  SR level: 1
+- Country code: UA
+  SR Code: UA61
+  SR label: Київська  Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA611
+  SR label: Білоцерківський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA612
+  SR label: Бориспільський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA613
+  SR label: Броварський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA614
+  SR label: Бучанський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA615
+  SR label: Вишгородський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA616
+  SR label: Обухівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA617
+  SR label: Фастівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA62
+  SR label: Черкаська  Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA621
+  SR label: Звенигородський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA622
+  SR label: Золотоніський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA623
+  SR label: Уманський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA624
+  SR label: Черкаський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA63
+  SR label: М. Київ
+  SR level: 2
+- Country code: UA
+  SR Code: UA630
+  SR label: М. Київ
+  SR level: 3
+- Country code: UA
+  SR Code: UA7
+  SR label: Макрорегіон_07
+  SR level: 1
+- Country code: UA
+  SR Code: UA71
+  SR label: Закарпатська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA711
+  SR label: Берегівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA712
+  SR label: Мукачівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA713
+  SR label: Рахівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA714
+  SR label: Тячівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA715
+  SR label: Ужгородський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA716
+  SR label: Хустський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA72
+  SR label: Івано-Франківська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA721
+  SR label: Верховинський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA722
+  SR label: Івано-Франківський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA723
+  SR label: Калуський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA724
+  SR label: Коломийський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA725
+  SR label: Косівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA726
+  SR label: Надвірнянський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA73
+  SR label: Львівська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA731
+  SR label: Дрогобицький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA732
+  SR label: Золочівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA733
+  SR label: Львівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA734
+  SR label: Самбірський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA735
+  SR label: Стрийський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA736
+  SR label: Червоноградський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA737
+  SR label: Яворівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA74
+  SR label: Чернівецька Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA741
+  SR label: Вижницький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA742
+  SR label: Дністровський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA743
+  SR label: Чернівецький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA8
+  SR label: Макрорегіон_08
+  SR level: 1
+- Country code: UA
+  SR Code: UA81
+  SR label: Волинська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA811
+  SR label: Володимирський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA812
+  SR label: Камінь-Каширський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA813
+  SR label: Ковельський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA814
+  SR label: Луцький Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA82
+  SR label: Житомирська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA821
+  SR label: Бердичівський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA822
+  SR label: Житомирський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA823
+  SR label: Коростенський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA824
+  SR label: Звягельський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA83
+  SR label: Рівненська Область
+  SR level: 2
+- Country code: UA
+  SR Code: UA831
+  SR label: Вараський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA832
+  SR label: Дубенський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA833
+  SR label: Рівненський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UA834
+  SR label: Сарненський Район
+  SR level: 3
+- Country code: UA
+  SR Code: UAZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: UA
+  SR Code: UAZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: UA
+  SR Code: UAZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
+- Country code: XK
+  SR Code: XK0
+  SR label: Kosovë/Kosovo
+  SR level: 1
+- Country code: XK
+  SR Code: XK00
+  SR label: Kosovë/Kosovo
+  SR level: 2
+- Country code: XK
+  SR Code: XK001
+  SR label: Prishtinë/Priština
+  SR level: 3
+- Country code: XK
+  SR Code: XK002
+  SR label: Mitrovicë/Mitrovica
+  SR level: 3
+- Country code: XK
+  SR Code: XK003
+  SR label: Pejë/Peć
+  SR level: 3
+- Country code: XK
+  SR Code: XK004
+  SR label: Prizren/Prizren
+  SR level: 3
+- Country code: XK
+  SR Code: XK005
+  SR label: Ferizaj/Uroševac
+  SR level: 3
+- Country code: XK
+  SR Code: XK006
+  SR label: Gjilan/Gnjilane
+  SR level: 3
+- Country code: XK
+  SR Code: XK007
+  SR label: Gjakovë/Đakovica
+  SR level: 3
+- Country code: XK
+  SR Code: XKZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: XK
+  SR Code: XKZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
+- Country code: XK
+  SR Code: XKZZZ
+  SR label: Extra-Regio level 3
+  SR level: 3
