@@ -3,15 +3,13 @@ from enum import IntEnum
 from pathlib import Path
 from pydantic import field_validator, model_validator, ValidationInfo
 
-import openpyxl
-import pooch
+import os
+import yaml
 from pydantic.dataclasses import dataclass
 
 # Base path for package code
 BASE_PATH = Path(__file__).absolute().parent
-BASE_URL = "https://ec.europa.eu/eurostat/documents/345175/629341/"
-FILENAME = "NUTS2021-NUTS2024.xlsx"
-FILE_URL = BASE_URL + FILENAME
+DATA_PATH = BASE_PATH / "data"
 MIN_DATA_ROW = 2
 MAX_DATA_COL = 4
 
@@ -112,28 +110,21 @@ class AllRegions:
 
     def _load(self) -> None:
         """
-        Reads data from NUTS spreadsheet into Database and builds search index.
+        Reads data from NUTS data files into Database and builds search index.
         """
-        nuts2024_hash = (
-            "3df559906175180d58a2a283985fb632b799b4cbe034e92515295064a9f2c01e"
-        )
-        pooch.retrieve(
-            FILE_URL, known_hash=nuts2024_hash, fname=FILENAME, path=BASE_PATH
-        )
-        spreadsheet = openpyxl.load_workbook(
-            BASE_PATH / FILENAME, read_only=True, data_only=True
-        )
-        sheet_class = {"NUTS2024": NUTSRegion, "Statistical Regions": SRRegion}
+        region_class = {"NUTS": NUTSRegion, "SR": SRRegion}
 
-        for sheet_name, cls in sheet_class.items():
-            sheet = spreadsheet[sheet_name]
-            for row in sheet.iter_rows(min_row=MIN_DATA_ROW, max_col=MAX_DATA_COL):
-                if all(cell.value for cell in row):
-                    region = {
-                        field.name: cell.value
-                        for (field, cell) in zip(fields(cls), row)
-                    }
-                    self.data.append(cls(**region))
+        for data_file in os.listdir(DATA_PATH):
+            for region_type, cls in region_class.items():
+                if data_file.startswith(region_type):
+                    with open(DATA_PATH / data_file, "r", encoding="utf8") as f:
+                        data = yaml.safe_load(f)
+                    for region in data:
+                        region = {
+                            field.name: value
+                            for (field, value) in zip(fields(cls), region.values())
+                        }
+                        self.data.append(cls(**region))
 
     def _search(
         self,
