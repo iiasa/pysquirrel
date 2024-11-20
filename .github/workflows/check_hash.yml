@@ -1,0 +1,32 @@
+name: Compare File Hash Weekly
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs weekly on Sunday at midnight UTC
+
+jobs:
+  compare-hash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Calculate Local File Hash
+        id: local-hash
+        run: echo "LOCAL_HASH=$(sha256sum pysquirrel/data/NUTS2021-NUTS2024.xlsx | awk '{print $1}')" >> $GITHUB_ENV
+
+      - name: Download File
+        run: curl -o most-recent-version.xlsx "https://ec.europa.eu/eurostat/documents/345175/629341/NUTS2021-NUTS2024.xlsx"
+
+      - name: Calculate Downloaded File Hash
+        id: downloaded-hash
+        run: echo "DOWNLOADED_HASH=$(sha256sum most-recent-version.xlsx | awk '{print $1}')" >> $GITHUB_ENV
+
+      - name: Compare Hashes
+        run: |
+          if [ "$LOCAL_HASH" != "$DOWNLOADED_HASH" ]; then
+            echo "Hashes do not match!"
+            exit 1
+          else
+            echo "Hashes match!"
+          fi
