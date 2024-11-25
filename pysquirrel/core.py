@@ -138,7 +138,7 @@ class AllRegions:
 
         for data_file in os.listdir(DATA_PATH):
             for region_type, cls in region_class.items():
-                if data_file.startswith(region_type):
+                if data_file.startswith(region_type) and data_file.endswith("yaml"):
                     with open(DATA_PATH / data_file, "r", encoding="utf8") as f:
                         data = yaml.safe_load(f)
                     for region in data:
