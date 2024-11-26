@@ -25,10 +25,10 @@ def flatten(lst):
             yield i
 
 
-def nuts_to_yaml(path: str, output_dir: str):
+def nuts_to_yaml(file_path: str, output_dir: str):
     """Converts a NUTS .xlsx source file to YAML files."""
 
-    workbook = load_workbook(path, read_only=True, data_only=True)
+    workbook = load_workbook(file_path, read_only=True, data_only=True)
 
     for sheet, file in {
         "NUTS2024": "NUTS2021-2024.yaml",
