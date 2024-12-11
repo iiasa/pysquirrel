@@ -5,22 +5,44 @@ from pydantic import field_validator, model_validator, ValidationInfo
 
 import os
 import yaml
+from openpyxl import load_workbook
 from pydantic.dataclasses import dataclass
 
 # Base path for package code
 BASE_PATH = Path(__file__).absolute().parent
 DATA_PATH = BASE_PATH / "data"
+COL_NAME_ROW = 1
 MIN_DATA_ROW = 2
 MAX_DATA_COL = 4
 
 
-# utility function
+# Utility functions
 def flatten(lst):
     for i in lst:
         if isinstance(i, list):
             yield from flatten(i)
         else:
             yield i
+
+
+def nuts_to_yaml(file_path: str, output_dir: str):
+    """Converts a NUTS .xlsx source file to YAML files."""
+
+    workbook = load_workbook(file_path, read_only=True, data_only=True)
+
+    for sheet, file in {
+        "NUTS2024": "NUTS2021-2024.yaml",
+        "Statistical Regions": "SR2021-2024.yaml",
+    }.items():
+        regions = []
+        worksheet = workbook[sheet]
+        cols = [cell.value for cell in worksheet[1]]
+        for row in worksheet.iter_rows(min_row=MIN_DATA_ROW, max_col=MAX_DATA_COL):
+            if all(cell.value for cell in row):
+                regions.append({col: cell.value for (col, cell) in zip(cols, row)})
+
+        with open(Path(output_dir) / file, "w") as f:
+            yaml.dump(regions, f, allow_unicode=True)
 
 
 class Level(IntEnum):
@@ -116,7 +138,7 @@ class AllRegions:
 
         for data_file in os.listdir(DATA_PATH):
             for region_type, cls in region_class.items():
-                if data_file.startswith(region_type):
+                if data_file.startswith(region_type) and data_file.endswith("yaml"):
                     with open(DATA_PATH / data_file, "r", encoding="utf8") as f:
                         data = yaml.safe_load(f)
                     for region in data:
