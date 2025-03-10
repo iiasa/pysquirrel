@@ -1,23 +1,37 @@
-[tool.poetry]
+[project]
 name = "pysquirrel"
-version = "0.0.0"
 description = "Python package designed to fetch NUTS administrative divisions"
-authors = ["Scenario Services team, ECE program, IIASA"]
-maintainers = ["David Almeida <almeida@iiasa.ac.at>"]
+authors = [
+    { name = "Scenario Services team, ECE program, IIASA"},
+]
+maintainers = [
+    { name = "David Almeida", email = "almeida@iiasa.ac.at"},
+]
 license = "MIT"
 readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "pydantic (>=2.8.2,<3.0)",
+    "openpyxl (>=3.1.5,<4.0)",
+    "pyyaml (>=6.0.2,<7.0)",
+]
+dynamic = ["version"]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-pydantic = "^2.8.2"
-openpyxl = "^3.1.5"
-pyyaml = "^6.0.2"
+[project.urls]
+repository = "https://github.com/iiasa/pysquirrel"
+
+[tool.poetry]
+requires-poetry = ">=2.0,<3.0"
+version = "0.0.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.2"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.6.2"
+
+[tool.poetry.requires-plugins]
+poetry-dynamic-versioning = { version = ">=1.0.0,<2.0.0", extras = ["plugin"] }
 
 [tool.poetry-dynamic-versioning]
 bump = true
@@ -26,5 +40,5 @@ style = "pep440"
 vcs = "git"
 
 [build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.7,<2.0.0"]
 build-backend = "poetry_dynamic_versioning.backend"
-requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
