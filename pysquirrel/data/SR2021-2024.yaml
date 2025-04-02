@@ -310,6 +310,30 @@
   SR Code: CHZZZ
   SR label: Extra-Regio level 3
   SR level: 3
+- Country code: BA
+  SR Code: BA0
+  SR label: Bosna i Hercegovina
+  SR level: 1
+- Country code: BA
+  SR Code: BA01
+  SR label: Federacija Bosne i Hercegovine
+  SR level: 2
+- Country code: BA
+  SR Code: BA02
+  SR label: Republika Srpska
+  SR level: 2
+- Country code: BA
+  SR Code: BA03
+  SR label: Brčko district BiH
+  SR level: 2
+- Country code: BA
+  SR Code: BAZ
+  SR label: Extra-Regio level 1
+  SR level: 1
+- Country code: BA
+  SR Code: BAZZ
+  SR label: Extra-Regio level 2
+  SR level: 2
 - Country code: ME
   SR Code: ME0
   SR label: Црна Гора
