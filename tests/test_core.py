@@ -45,8 +45,8 @@ def test_all_regions(monkeypatch):
     all_regions = AllRegions()
 
     # Test full data import
-    assert len(all_regions.get(level=1)) == 160
-    assert len(all_regions.get(level=2)) == 361
+    assert len(all_regions.get(level=1)) == 162
+    assert len(all_regions.get(level=2)) == 365
     assert len(all_regions.get(level=3)) == 1521
 
     # Test data fields
