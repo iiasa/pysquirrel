@@ -222,6 +222,7 @@ class AllRegions:
         Returns all regions for the listed countries and levels.
 
         :param country_code: country code(s) to search
+        :param iso3: ISO3 code(s) to search
         :param level: NUTS level(s) to search
         """
         results = []
