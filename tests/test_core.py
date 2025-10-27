@@ -74,3 +74,21 @@ def test_all_regions(monkeypatch):
     assert set(all_regions.get(country_code="AT", level=1)) == set([MOCK_DATA[0]])
     assert set(all_regions.get(country_code="PT", level=3)) == set([MOCK_DATA[-1]])
     assert set(all_regions.get(country_code=["AT", "PT"])) == set(MOCK_DATA)
+
+
+def test_iso3_lookup(monkeypatch):
+    """Test ISO3 lookup support via the `iso3` parameter."""
+    all_regions = AllRegions()
+
+    # Replace the _load method with the mock method and reload
+    monkeypatch.setattr(AllRegions, "_load", mock_load)
+    all_regions._load()
+
+    # Single ISO3 lookup
+    assert set(all_regions.get(iso3="AUT")) == set(MOCK_DATA[:3])
+
+    # Multiple ISO3 lookup
+    assert set(all_regions.get(iso3=["AUT", "PRT"])) == set(MOCK_DATA)
+
+    # Accept ISO2 in the iso3 parameter as well
+    assert set(all_regions.get(iso3="PT")) == set(MOCK_DATA[3:])
