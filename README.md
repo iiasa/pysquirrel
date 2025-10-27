@@ -5,7 +5,7 @@
 [![pytest](https://img.shields.io/github/actions/workflow/status/iiasa/pysquirrel/pytest.yml?logo=GitHub&label=pytest)](https://github.com/iiasa/pysquirrel/actions/workflows/pytest.yml)
 [![DOI](https://zenodo.org/badge/791752279.svg)](https://zenodo.org/doi/10.5281/zenodo.13683405)
 
-Copyright 2024 IIASA Scenario Services team
+Copyright 2025 IIASA Scenario Services team
 
 This repository is licensed under the [MIT License](LICENSE).
 
@@ -37,7 +37,9 @@ parameters and the values to search as shown below:
 ```python
 >>> import pysquirrel
 
->>> pysquirrel.nuts.get(country_code="AT")  # gets all regions in Austria
+>>> pysquirrel.nuts.get(country_code="AT")  # gets all regions in Austria by EU country code
+
+>>> squirrel.nuts.get(iso3="AUT")  # gets all regions in Austria by ISO3 country code
 
 >>> pysquirrel.nuts.get(level=3)  # gets all NUTS3 regions
 
