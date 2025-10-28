@@ -39,7 +39,7 @@ parameters and the values to search as shown below:
 
 >>> pysquirrel.nuts.get(country_code="AT")  # gets all regions in Austria by EU country code
 
->>> squirrel.nuts.get(iso3="AUT")  # gets all regions in Austria by ISO3 country code
+>>> pysquirrel.nuts.get(iso3="AUT")  # gets all regions in Austria by ISO3 country code
 
 >>> pysquirrel.nuts.get(level=3)  # gets all NUTS3 regions
 
