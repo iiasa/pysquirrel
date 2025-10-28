@@ -89,7 +89,7 @@ def test_iso3_lookup(monkeypatch):
     assert set(all_regions.get(iso3="AUT")) == set(MOCK_DATA[:3])
 
     # Multiple ISO3 lookup
-    assert set(all_regions.get(iso3=["AUT", "PRT"])) == set(MOCK_DATA)
+    assert set(all_regions.get(iso3=["AUT", "PRT"])) == set(MOCK_DATA[:-1])
 
     # Accept ISO2 in the iso3 parameter as well
-    assert set(all_regions.get(iso3="PT")) == set(MOCK_DATA[3:])
+    assert set(all_regions.get(iso3="PT")) == set(MOCK_DATA[3:-1])
