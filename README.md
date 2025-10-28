@@ -14,6 +14,7 @@ This repository is licensed under the [MIT License](LICENSE).
 **pysquirrel** is a Python package designed to work with NUTS administrative divisions.
 
 The current NUTS version is valid from 1 January 2024.
+The UK NUTS version is valid from January 2018.
 
 ## Background
 
