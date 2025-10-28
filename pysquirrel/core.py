@@ -57,6 +57,7 @@ ISO2_TO_ISO3 = {
     "AL": "ALB",
     "MK": "MKD",
     "UA": "UKR",
+    "UK": "GBR",
 }
 
 # Reverse mapping for quick lookups from ISO3 -> ISO2
@@ -217,7 +218,7 @@ class AllRegions:
         level: int | list[int] = None,
     ) -> list[NUTSRegion | SRRegion, None]:
         """
-        Searches NUTS 2024 classification database by country code(s) and/or
+        Searches NUTS 2024 classification database by country code(s), ISO3 code, or
         NUTS level.
         Returns all regions for the listed countries and levels.
 
