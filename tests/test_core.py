@@ -50,6 +50,9 @@ def test_all_regions(monkeypatch):
     assert len(all_regions.get(level=2)) == 406
     assert len(all_regions.get(level=3)) == 1700
 
+    # Test UK NUTS import
+    assert len(all_regions.get(country_code="UK")) == 232
+
     # Test data fields
     lux = [
         nuts
