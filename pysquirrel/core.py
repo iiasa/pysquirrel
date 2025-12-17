@@ -16,6 +16,54 @@ MIN_DATA_ROW = 2
 MAX_DATA_COL = 4
 
 
+# Minimal ISO mappings (ISO 3166-1 alpha-2 -> alpha-3)
+ISO2_TO_ISO3 = {
+    "AT": "AUT",
+    "BE": "BEL",
+    "BG": "BGR",
+    "HR": "HRV",
+    "CY": "CYP",
+    "CZ": "CZE",
+    "DK": "DNK",
+    "EE": "EST",
+    "FI": "FIN",
+    "FR": "FRA",
+    "DE": "DEU",
+    "GR": "GRC",
+    "EL": "GRC",
+    "HU": "HUN",
+    "IE": "IRL",
+    "IS": "ISL",
+    "IT": "ITA",
+    "LI": "LIE",
+    "LV": "LVA",
+    "LT": "LTU",
+    "LU": "LUX",
+    "MT": "MLT",
+    "NL": "NLD",
+    "NO": "NOR",
+    "PL": "POL",
+    "PT": "PRT",
+    "RO": "ROU",
+    "SK": "SVK",
+    "SI": "SVN",
+    "ES": "ESP",
+    "SE": "SWE",
+    "GB": "GBR",
+    "CH": "CHE",
+    "TR": "TUR",
+    "RS": "SRB",
+    "ME": "MNE",
+    "AL": "ALB",
+    "MK": "MKD",
+    "UA": "UKR",
+    "UK": "GBR",
+}
+
+# Reverse mapping for quick lookups from ISO3 -> ISO2
+ISO3_TO_ISO2 = {v: k for k, v in ISO2_TO_ISO3.items()}
+
+
 # Utility functions
 def flatten(lst):
     for i in lst:
@@ -163,19 +211,53 @@ class AllRegions:
         return set(i for i in self.data if getattr(i, param) == value)
 
     def get(
-        self, *, country_code: str | list[str] = None, level: int | list[int] = None
+        self,
+        *,
+        country_code: str | list[str] = None,
+        iso3: str | list[str] = None,
+        level: int | list[int] = None,
     ) -> list[NUTSRegion | SRRegion, None]:
         """
-        Searches NUTS 2024 classification database by country code(s) and/or
+        Searches NUTS 2024 classification database by country code(s), ISO3 code, or
         NUTS level.
         Returns all regions for the listed countries and levels.
 
         :param country_code: country code(s) to search
+        :param iso3: ISO3 code(s) to search
         :param level: NUTS level(s) to search
         """
         results = []
-        if not (country_code or level):
+        if not (country_code or level or iso3):
             raise ValueError("no keyword argument(s) passed.")
+
+        # If iso3 is provided, convert to country_code(s) (ISO2) using
+        # the built-in mapping. Accept both single string and list.
+        if iso3:
+            iso3_codes = iso3 if isinstance(iso3, (list, tuple)) else [iso3]
+            iso2_codes: list[str] = []
+            for v in iso3_codes:
+                if not isinstance(v, str):
+                    raise ValueError("iso3 codes must be strings")
+                v_up = v.upper()
+                # Accept both 3-letter ISO3 and 2-letter ISO2 passed accidentally.
+                if len(v_up) == 3:
+                    if v_up in ISO3_TO_ISO2:
+                        iso2_codes.append(ISO3_TO_ISO2[v_up])
+                    else:
+                        raise ValueError(f"unknown ISO3 code: {v}")
+                elif len(v_up) == 2:
+                    iso2_codes.append(v_up)
+                else:
+                    raise ValueError(f"invalid ISO code: {v}")
+
+            # Merge converted iso2 values into country_code argument
+            if country_code:
+                # normalize existing country_code into list
+                if isinstance(country_code, (str, int)):
+                    country_code = [country_code]
+                country_code = list(set(country_code) | set(iso2_codes))
+            else:
+                country_code = iso2_codes
         for param, values in {"country_code": country_code, "level": level}.items():
             if isinstance(values, (int, str)):
                 values = [values]

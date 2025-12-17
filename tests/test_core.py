@@ -1,6 +1,6 @@
 import pytest
 
-from pysquirrel.core import Level, NUTSRegion, AllRegions
+from pysquirrel.core import Level, NUTSRegion, SRRegion, AllRegions
 from pydantic import ValidationError
 
 MOCK_DATA = [
@@ -10,6 +10,7 @@ MOCK_DATA = [
     NUTSRegion(country_code="PT", code="PT1", label="Continente", level=1),
     NUTSRegion(country_code="PT", code="PT1C", label="Alentejo", level=2),
     NUTSRegion(country_code="PT", code="PT1C1", label="Alentejo Litoral", level=3),
+    SRRegion(country_code="IS", code="IS0", label="Ísland", level=1),  # SR
 ]
 
 
@@ -45,9 +46,12 @@ def test_all_regions(monkeypatch):
     all_regions = AllRegions()
 
     # Test full data import
-    assert len(all_regions.get(level=1)) == 162
-    assert len(all_regions.get(level=2)) == 365
-    assert len(all_regions.get(level=3)) == 1521
+    assert len(all_regions.get(level=1)) == 174
+    assert len(all_regions.get(level=2)) == 406
+    assert len(all_regions.get(level=3)) == 1700
+
+    # Test UK NUTS import
+    assert len(all_regions.get(country_code="UK")) == 232
 
     # Test data fields
     lux = [
@@ -65,12 +69,30 @@ def test_all_regions(monkeypatch):
     all_regions._load()
 
     # Check if the data is loaded correctly
-    assert len(all_regions.data) == 6
+    assert len(all_regions.data) == 7
 
     # Test query logic with mock data
     assert set(all_regions.get(country_code="AT")) == set(MOCK_DATA[:3])
-    assert set(all_regions.get(country_code="PT")) == set(MOCK_DATA[3:])
+    assert set(all_regions.get(country_code="PT")) == set(MOCK_DATA[3:-1])
     assert set(all_regions.get(level=2)) == set([MOCK_DATA[1], MOCK_DATA[4]])
     assert set(all_regions.get(country_code="AT", level=1)) == set([MOCK_DATA[0]])
-    assert set(all_regions.get(country_code="PT", level=3)) == set([MOCK_DATA[-1]])
-    assert set(all_regions.get(country_code=["AT", "PT"])) == set(MOCK_DATA)
+    assert set(all_regions.get(country_code="PT", level=3)) == set([MOCK_DATA[-2]])
+    assert set(all_regions.get(country_code="IS")) == set([MOCK_DATA[-1]])
+
+
+def test_iso3_lookup(monkeypatch):
+    """Test ISO3 lookup support via the `iso3` parameter."""
+    all_regions = AllRegions()
+
+    # Replace the _load method with the mock method and reload
+    monkeypatch.setattr(AllRegions, "_load", mock_load)
+    all_regions._load()
+
+    # Single ISO3 lookup
+    assert set(all_regions.get(iso3="AUT")) == set(MOCK_DATA[:3])
+
+    # Multiple ISO3 lookup
+    assert set(all_regions.get(iso3=["AUT", "PRT"])) == set(MOCK_DATA[:-1])
+
+    # Accept ISO2 in the iso3 parameter as well
+    assert set(all_regions.get(iso3="PT")) == set(MOCK_DATA[3:-1])

@@ -1,0 +1,928 @@
+- Country code: UK
+  NUTS Code: UKC
+  NUTS label: North East (England)
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKD
+  NUTS label: North West (England)
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKE
+  NUTS label: Yorkshire and The Humber
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKF
+  NUTS label: East Midlands (England)
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKG
+  NUTS label: West Midlands (England)
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKH
+  NUTS label: East of England
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKI
+  NUTS label: London
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKJ
+  NUTS label: South East (England)
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKK
+  NUTS label: South West (England)
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKL
+  NUTS label: Wales
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKM
+  NUTS label: Scotland
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKN
+  NUTS label: Northern Ireland
+  NUTS level: 1
+- Country code: UK
+  NUTS Code: UKC1
+  NUTS label: Tees Valley and Durham
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKC2
+  NUTS label: Northumberland and Tyne and Wear
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKD1
+  NUTS label: Cumbria
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKD3
+  NUTS label: Greater Manchester
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKD4
+  NUTS label: Lancashire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKD6
+  NUTS label: Cheshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKD7
+  NUTS label: Merseyside
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKE1
+  NUTS label: East Yorkshire and Northern Lincolnshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKE2
+  NUTS label: North Yorkshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKE3
+  NUTS label: South Yorkshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKE4
+  NUTS label: West Yorkshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKF1
+  NUTS label: Derbyshire and Nottinghamshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKF2
+  NUTS label: 'Leicestershire, Rutland and Northamptonshire'
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKF3
+  NUTS label: Lincolnshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKG1
+  NUTS label: 'Herefordshire, Worcestershire and Warwickshire'
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKG2
+  NUTS label: Shropshire and Staffordshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKG3
+  NUTS label: West Midlands
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKH1
+  NUTS label: East Anglia
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKH2
+  NUTS label: Bedfordshire and Hertfordshire
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKH3
+  NUTS label: Essex
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKI3
+  NUTS label: Inner London - West
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKI4
+  NUTS label: Inner London - East
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKI5
+  NUTS label: Outer London - East and North East
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKI6
+  NUTS label: Outer London - South
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKI7
+  NUTS label: Outer London - West and North West
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKJ1
+  NUTS label: 'Berkshire, Buckinghamshire and Oxfordshire'
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKJ2
+  NUTS label: 'Surrey, East and West Sussex'
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKJ3
+  NUTS label: Hampshire and Isle of Wight
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKJ4
+  NUTS label: Kent
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKK1
+  NUTS label: 'Gloucestershire, Wiltshire and Bath/Bristol area'
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKK2
+  NUTS label: Dorset and Somerset
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKK3
+  NUTS label: Cornwall and Isles of Scilly
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKK4
+  NUTS label: Devon
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKL1
+  NUTS label: West Wales and The Valleys
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKL2
+  NUTS label: East Wales
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKM5
+  NUTS label: North Eastern Scotland
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKM6
+  NUTS label: Highlands and Islands
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKM7
+  NUTS label: Eastern Scotland
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKM8
+  NUTS label: West Central Scotland
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKM9
+  NUTS label: Southern Scotland
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKN0
+  NUTS label: Northern Ireland
+  NUTS level: 2
+- Country code: UK
+  NUTS Code: UKJ46
+  NUTS label: West Kent
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKC11
+  NUTS label: Hartlepool and Stockton-on-Tees
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK11
+  NUTS label: 'Bristol, City of'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK12
+  NUTS label: 'Bath and North East Somerset, North Somerset and South Gloucestershire'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKC12
+  NUTS label: South Teesside
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKC13
+  NUTS label: Darlington
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK13
+  NUTS label: Gloucestershire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK14
+  NUTS label: Swindon
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKC14
+  NUTS label: Durham CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKC21
+  NUTS label: Northumberland
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK15
+  NUTS label: Wiltshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK21
+  NUTS label: Bournemouth and Poole
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKC22
+  NUTS label: Tyneside
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKC23
+  NUTS label: Sunderland
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK22
+  NUTS label: Dorset CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK23
+  NUTS label: Somerset
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD11
+  NUTS label: West Cumbria
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD12
+  NUTS label: East Cumbria
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK30
+  NUTS label: Cornwall and Isles of Scilly
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK41
+  NUTS label: Plymouth
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD33
+  NUTS label: Manchester
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD34
+  NUTS label: Greater Manchester South West
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK42
+  NUTS label: Torbay
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKK43
+  NUTS label: Devon CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD35
+  NUTS label: Greater Manchester South East
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD36
+  NUTS label: Greater Manchester North West
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL11
+  NUTS label: Isle of Anglesey
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL12
+  NUTS label: Gwynedd
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD37
+  NUTS label: Greater Manchester North East
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD41
+  NUTS label: Blackburn with Darwen
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL13
+  NUTS label: Conwy and Denbighshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD42
+  NUTS label: Blackpool
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL14
+  NUTS label: South West Wales
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL15
+  NUTS label: Central Valleys
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD44
+  NUTS label: Lancaster and Wyre
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD45
+  NUTS label: Mid Lancashire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL16
+  NUTS label: Gwent Valleys
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL17
+  NUTS label: Bridgend and Neath Port Talbot
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD46
+  NUTS label: East Lancashire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD47
+  NUTS label: Chorley and West Lancashire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL18
+  NUTS label: Swansea
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL21
+  NUTS label: Monmouthshire and Newport
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD61
+  NUTS label: Warrington
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD62
+  NUTS label: Cheshire East
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL22
+  NUTS label: Cardiff and Vale of Glamorgan
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL23
+  NUTS label: Flintshire and Wrexham
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD63
+  NUTS label: Cheshire West and Chester
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD71
+  NUTS label: East Merseyside
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKL24
+  NUTS label: Powys
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM50
+  NUTS label: Aberdeen City and Aberdeenshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD72
+  NUTS label: Liverpool
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD73
+  NUTS label: Sefton
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM61
+  NUTS label: Caithness and Sutherland and Ross and Cromarty
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM62
+  NUTS label: 'Inverness and Nairn and Moray, Badenoch and Strathspey'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKD74
+  NUTS label: Wirral
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE11
+  NUTS label: 'Kingston upon Hull, City of'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM63
+  NUTS label: 'Lochaber, Skye and Lochalsh, Arran and Cumbrae and Argyll and Bute'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM64
+  NUTS label: Eilean Siar (Western Isles)
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE12
+  NUTS label: East Riding of Yorkshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE13
+  NUTS label: North and North East Lincolnshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM65
+  NUTS label: Orkney Islands
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM66
+  NUTS label: Shetland Islands
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE21
+  NUTS label: York
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE22
+  NUTS label: North Yorkshire CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM71
+  NUTS label: Angus and Dundee City
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM72
+  NUTS label: Clackmannanshire and Fife
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE31
+  NUTS label: 'Barnsley, Doncaster and Rotherham'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE32
+  NUTS label: Sheffield
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM73
+  NUTS label: East Lothian and Midlothian
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM75
+  NUTS label: City of Edinburgh
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE41
+  NUTS label: Bradford
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE42
+  NUTS label: Leeds
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM76
+  NUTS label: Falkirk
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM77
+  NUTS label: Perth and Kinross and Stirling
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE44
+  NUTS label: Calderdale and Kirklees
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKE45
+  NUTS label: Wakefield
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM78
+  NUTS label: West Lothian
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM81
+  NUTS label: 'East Dunbartonshire, West Dunbartonshire and Helensburgh and Lomond'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF11
+  NUTS label: Derby
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF12
+  NUTS label: East Derbyshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM82
+  NUTS label: Glasgow City
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM83
+  NUTS label: 'Inverclyde, East Renfrewshire and Renfrewshire'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF13
+  NUTS label: South and West Derbyshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF14
+  NUTS label: Nottingham
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM84
+  NUTS label: North Lanarkshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM91
+  NUTS label: Scottish Borders
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF15
+  NUTS label: North Nottinghamshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF16
+  NUTS label: South Nottinghamshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM92
+  NUTS label: Dumfries and Galloway
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM93
+  NUTS label: East Ayrshire and North Ayrshire mainland
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF21
+  NUTS label: Leicester
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF22
+  NUTS label: Leicestershire CC and Rutland
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM94
+  NUTS label: South Ayrshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKM95
+  NUTS label: South Lanarkshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF24
+  NUTS label: West Northamptonshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF25
+  NUTS label: North Northamptonshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN06
+  NUTS label: Belfast
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN07
+  NUTS label: 'Armagh City, Banbridge and Craigavon'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKF30
+  NUTS label: Lincolnshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG11
+  NUTS label: 'Herefordshire, County of'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG12
+  NUTS label: Worcestershire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN08
+  NUTS label: 'Newry, Mourne and Down'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG13
+  NUTS label: Warwickshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN09
+  NUTS label: Ards and North Down
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG21
+  NUTS label: Telford and Wrekin
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN10
+  NUTS label: Derry City and Strabane
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG22
+  NUTS label: Shropshire CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN11
+  NUTS label: Mid Ulster
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG23
+  NUTS label: Stoke-on-Trent
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN12
+  NUTS label: Causeway Coast and Glens
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG24
+  NUTS label: Staffordshire CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN13
+  NUTS label: Antrim and Newtownabbey
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN14
+  NUTS label: Lisburn and Castlereagh
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG31
+  NUTS label: Birmingham
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN15
+  NUTS label: Mid and East Antrim
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG32
+  NUTS label: Solihull
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKN16
+  NUTS label: Fermanagh and Omagh
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG33
+  NUTS label: Coventry
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG36
+  NUTS label: Dudley
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG37
+  NUTS label: Sandwell
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG38
+  NUTS label: Walsall
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKG39
+  NUTS label: Wolverhampton
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH11
+  NUTS label: Peterborough
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH12
+  NUTS label: Cambridgeshire CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH14
+  NUTS label: Suffolk
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH15
+  NUTS label: Norwich and East Norfolk
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH16
+  NUTS label: North and West Norfolk
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH17
+  NUTS label: Breckland and South Norfolk
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH21
+  NUTS label: Luton
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH23
+  NUTS label: Hertfordshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH24
+  NUTS label: Bedford
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH25
+  NUTS label: Central Bedfordshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH31
+  NUTS label: Southend-on-Sea
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH32
+  NUTS label: Thurrock
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH34
+  NUTS label: Essex Haven Gateway
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH35
+  NUTS label: West Essex
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH36
+  NUTS label: Heart of Essex
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKH37
+  NUTS label: Essex Thames Gateway
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI31
+  NUTS label: Camden and City of London
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI32
+  NUTS label: Westminster
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI33
+  NUTS label: Kensington & Chelsea and Hammersmith & Fulham
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI34
+  NUTS label: Wandsworth
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI41
+  NUTS label: Hackney and Newham
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI42
+  NUTS label: Tower Hamlets
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI43
+  NUTS label: Haringey and Islington
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI44
+  NUTS label: Lewisham and Southwark
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI45
+  NUTS label: Lambeth
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI51
+  NUTS label: Bexley and Greenwich
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI52
+  NUTS label: Barking & Dagenham and Havering
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI53
+  NUTS label: Redbridge and Waltham Forest
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI54
+  NUTS label: Enfield
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI61
+  NUTS label: Bromley
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI62
+  NUTS label: Croydon
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI63
+  NUTS label: 'Merton, Kingston upon Thames and Sutton'
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI71
+  NUTS label: Barnet
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI72
+  NUTS label: Brent
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI73
+  NUTS label: Ealing
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI74
+  NUTS label: Harrow and Hillingdon
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKI75
+  NUTS label: Hounslow and Richmond upon Thames
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ11
+  NUTS label: Berkshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ12
+  NUTS label: Milton Keynes
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ13
+  NUTS label: Buckinghamshire CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ14
+  NUTS label: Oxfordshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ21
+  NUTS label: Brighton and Hove
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ22
+  NUTS label: East Sussex CC
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ25
+  NUTS label: West Surrey
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ26
+  NUTS label: East Surrey
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ27
+  NUTS label: West Sussex (South West)
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ28
+  NUTS label: West Sussex (North East)
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ31
+  NUTS label: Portsmouth
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ32
+  NUTS label: Southampton
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ34
+  NUTS label: Isle of Wight
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ35
+  NUTS label: South Hampshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ36
+  NUTS label: Central Hampshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ37
+  NUTS label: North Hampshire
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ41
+  NUTS label: Medway
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ43
+  NUTS label: Kent Thames Gateway
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ44
+  NUTS label: East Kent
+  NUTS level: 3
+- Country code: UK
+  NUTS Code: UKJ45
+  NUTS label: Mid Kent
+  NUTS level: 3
