@@ -54,6 +54,11 @@ Each Region object consists of five attributes:
 - a NUTS level (1, 2 or 3)
 - a parent code (corresponding to the NUTS parent region)
 
+## NUTS regions geojsons
+
+The geojson files for the NUTS 1, 2 and 3 regions are 
+available in the [scse-geojson](https://github.com/iiasa/scse-geojson) repository.
+
 ## Eurostat copyright notice on NUTS region data file
 
 This package imports the NUTS spreadsheet from the Eurostat website.
