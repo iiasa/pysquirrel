@@ -1,3 +1,5 @@
+"""Core data models and region database for pysquirrel."""
+
 from dataclasses import fields
 from enum import IntEnum
 from pathlib import Path
@@ -112,6 +114,10 @@ class Region:
     def parent_code(self) -> str | None:
         return self.code[:-1] if self.level > 1 else None
 
+    @property
+    def is_extra_regio(self) -> bool:
+        return all(c == "Z" for c in self.code[len(self.country_code) :])
+
     @field_validator("country_code")
     @classmethod
     def check_country_code(cls, v: str):
@@ -156,6 +162,11 @@ class Region:
             and len(self.code) == len(self.country_code) + self.level
         ):
             return self
+        else:
+            raise ValueError(
+                f"code '{self.code}' is inconsistent with country_code "
+                f"'{self.country_code}' and level {self.level}."
+            )
 
 
 class NUTSRegion(Region):
@@ -216,6 +227,7 @@ class AllRegions:
         country_code: str | list[str] = None,
         iso3: str | list[str] = None,
         level: int | list[int] = None,
+        include_extra_regio: bool = False,
     ) -> list[NUTSRegion | SRRegion, None]:
         """
         Searches NUTS 2024 classification database by country code(s), ISO3 code, or
@@ -225,8 +237,11 @@ class AllRegions:
         :param country_code: country code(s) to search
         :param iso3: ISO3 code(s) to search
         :param level: NUTS level(s) to search
+        :param include_extra_regio: if True, include Extra-Regio NUTS regions
+            (codes where all characters after the country code are 'Z',
+            e.g. BEZ, BEZZ, BEZZZ). Defaults to False.
         """
-        results = []
+        results: list[Region] = []
         if not (country_code or level or iso3):
             raise ValueError("no keyword argument(s) passed.")
 
@@ -237,7 +252,7 @@ class AllRegions:
             iso2_codes: list[str] = []
             for v in iso3_codes:
                 if not isinstance(v, str):
-                    raise ValueError("iso3 codes must be strings")
+                    raise ValueError("ISO3 codes must be strings")
                 v_up = v.upper()
                 # Accept both 3-letter ISO3 and 2-letter ISO2 passed accidentally.
                 if len(v_up) == 3:
@@ -250,7 +265,7 @@ class AllRegions:
                 else:
                     raise ValueError(f"invalid ISO code: {v}")
 
-            # Merge converted iso2 values into country_code argument
+            # Merge converted ISO2 values into country_code argument
             if country_code:
                 # normalize existing country_code into list
                 if isinstance(country_code, (str, int)):
@@ -265,4 +280,9 @@ class AllRegions:
                 results.append(
                     set.union(*(self._search(param, value) for value in values))
                 )
-        return list(set.intersection(*results))
+        matched = (
+            {r for r in set.intersection(*results) if not r.is_extra_regio}
+            if not include_extra_regio
+            else set.intersection(*results)
+        )
+        return list(matched)
